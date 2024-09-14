@@ -38,3 +38,8 @@ img {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
+h2:hover {
+    color: #3498db;
+    transition: color 0.3s ease;
+}
