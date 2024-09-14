@@ -1,14 +1,14 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: black;
+    color: white;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2 {
-    color: #2c3e50;
+    color: white;
     text-align: center;
     padding-top: 10px;
 }
@@ -39,7 +39,3 @@ img {
     border-radius: 10px;
 }
 
-h2:hover {
-    color: #3498db;
-    transition: color 0.3s ease;
-}
