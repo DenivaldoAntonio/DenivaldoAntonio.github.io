@@ -53,3 +53,28 @@ Alguns pontos a melhorar:
   <li>Milk</li>
 </ol> 
 ```
+
+## Feedback Lab 2
+
+1. As imagens devem conter sempre um texto alternativo:
+
+```html
+ <img src="images/Singapura1 pequeno.jpg">
+```
+
+2. Podemos formatar o poema através do elemento:
+
+```html
+<pre>
+  Singapura, de mar e céu sem fim, um farol brilhante que guia o jardim. 
+  Tecnologia e natureza em perfeitaunião, desenham um futuro de inspiração. 
+  Nos mercados, vozes de toda nação, uma mistura única emcelebração. 
+  As luzes da cidade refletem no chão, enquanto o mundo te observa com admiração.
+</pre>
+```
+
+3. Formatação do código HTML
+
+É necessário formatar o código de forma correta. Podes usar o Visual studio code para te ajudar com esta formatação!
+
+Bom uso do HTML semântico! Gostei dos titles diferentes em casa página.
