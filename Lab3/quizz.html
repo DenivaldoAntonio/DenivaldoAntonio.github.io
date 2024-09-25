@@ -1,115 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Quizz</title>
 
 </head>
-    <body>
-        <header>
-            <h1>Singapura</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="local.html"> Localização</a>
-                <a href="multimedia.html">Multimédia</a>
-                <a href="info.html">Informação</a>
-                <a href="quizz.html">Quizz</a>
-                <a href="viagem.html">Viagem</a>
-            </nav>
-        </header>
 
-        <main>
+<body>
+    <header>
+        <h1>Singapura</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html"> Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+    </header>
 
-            <h2>Quizz sobre a cidade</h2>
-            <form method="get" action="https://postman-echo.com/get" id="quiz-singapura"></form>
+    <main>
 
-            <form>
-                <fieldset>
-                    <legend>Informações Pessoais</legend>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required><br><br>
-                    
-                    <label for="apelido">Apelido:</label>
-                    <input type="text" id="apelido" name="apelido" required><br><br>
-        
-                    <label for="email">Email:</label>
-                    <input type="email" autocomplete="email" id="email" name="email" required><br><br>
-                </fieldset>
+        <h2>Quizz sobre a cidade</h2>
+        <form method="get" action="https://postman-echo.com/get" id="quiz-singapura"></form>
 
-                <fieldset>
-                    <legend>Quiz sobre Singapura</legend>
-                    
-                    <!-- Pergunta 1 - Resposta curta com datalist -->
-                    <label for="capital">1. Qual a capital de Singapura?</label><br>
-                    <input list="capitais" id="capital" name="capital" required>
-                    <datalist id="capitais">
-                        <option value="Singapura">
-                        <option value="Kuala Lumpur">
-                        <option value="Bangkok">
-                        <option value="Jacarta">
-                    </datalist><br><br>
-        
-                    <!-- Pergunta 2 - Radio (escolha única) -->
-                    <label>2. Singapura é conhecida por ter qual destas atrações icônicas?</label><br>
-                    <input type="radio" id="marina-bay" name="atracao" value="marina-bay" required>
-                    <label for="marina-bay">Marina Bay Sands</label><br>
-                    <input type="radio" id="merlion" name="atracao" value="merlion">
-                    <label for="merlion">Merlion</label><br>
-                    <input type="radio" id="gardens" name="atracao" value="gardens">
-                    <label for="gardens">Gardens by the Bay</label><br><br>
-        
-                    <!-- Pergunta 3 - Checkbox (múltipla escolha) -->
-                    <label>3. Quais dessas comidas são famosas em Singapura? (Selecione todas que se aplicam)</label><br>
-                    <input type="checkbox" id="laksa" name="comida" value="laksa">
-                    <label for="laksa">Laksa</label><br>
-                    <input type="checkbox" id="satay" name="comida" value="satay">
-                    <label for="satay">Satay</label><br>
-                    <input type="checkbox" id="ramen" name="comida" value="ramen">
-                    <label for="ramen">Ramen</label><br>
-                    <input type="checkbox" id="nasi-lemak" name="comida" value="nasi-lemak">
-                    <label for="nasi-lemak">Nasi Lemak</label><br><br>
-        
-                    <!-- Pergunta 4 - Date -->
-                    <label for="data-visita">4. Em que data você visitou Singapura pela última vez?</label><br>
-                    <input type="date" id="data-visita" name="data-visita"><br><br>
-        
-                    <!-- Pergunta 5 - Time -->
-                    <label for="hora-visita">5. A que horas você chegou ao aeroporto de Changi?</label><br>
-                    <input type="time" id="hora-visita" name="hora-visita"><br><br>
-        
-                    <!-- Pergunta 6 - Número -->
-                    <label for="visitantes">6. Quantas vezes você já visitou Singapura?</label><br>
-                    <input type="number" id="visitantes" name="visitantes" min="0" max="100"><br><br>
-        
-                    <!-- Pergunta 7 - Cor -->
-                    <label for="cor-preferida">7. Qual cor você associa a Singapura?</label><br>
-                    <input type="color" id="cor-preferida" name="cor-preferida"><br><br>
-        
-                    <!-- Pergunta 8 - Range -->
-                    <label for="satisfacao">8. De 1 a 10, quão satisfeito(a) ficou com a sua última viagem a Singapura?</label><br>
-                    <input type="range" id="satisfacao" name="satisfacao" min="1" max="10"><br><br>
-        
-                    <!-- Pergunta 9 - Textarea -->
-                    <label for="comentarios">9. Escreva um breve comentário sobre o que mais gostou em Singapura:</label><br>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
-        
-                    <!-- Pergunta 10 - Imagem -->
-                    <label for="imagem-singapura">10. Faça upload de uma imagem da sua viagem a Singapura (opcional):</label><br>
-                    <input type="file" id="imagem-singapura" name="imagem-singapura" accept="image/*"><br><br>
-        
-                </fieldset>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
 
-                <fieldset>
-                    <legend>Acçôes</legend>
-                    
-                    <input type="reset" value="Resetar Formulário">             
-                    <input type="submit" value="Enviar Respostas">
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" name="apelido" required><br><br>
 
-                </fieldset>
+                <label for="email">Email:</label>
+                <input type="email" autocomplete="email" id="email" name="email" required><br><br>
+            </fieldset>
 
-            </form>    
-        </main>
-    </body>
+            <fieldset>
+                <legend>Quiz sobre Singapura</legend>
+
+                <!-- Pergunta 1 - Resposta curta com datalist -->
+                <label for="capital">1. Qual a capital de Singapura?</label><br>
+                <input list="capitais" id="capital" name="capital" required>
+                <datalist id="capitais">
+                    <option value="Singapura">
+                    <option value="Kuala Lumpur">
+                    <option value="Bangkok">
+                    <option value="Jacarta">
+                </datalist><br><br>
+
+                <!-- Pergunta 2 - Radio (escolha única) -->
+                <label>2. Singapura é conhecida por ter qual destas atrações icônicas?</label><br>
+                <input type="radio" id="marina-bay" name="atracao" value="marina-bay" required>
+                <label for="marina-bay">Marina Bay Sands</label><br>
+                <input type="radio" id="merlion" name="atracao" value="merlion">
+                <label for="merlion">Merlion</label><br>
+                <input type="radio" id="gardens" name="atracao" value="gardens">
+                <label for="gardens">Gardens by the Bay</label><br><br>
+
+                <!-- Pergunta 3 - Checkbox (múltipla escolha) -->
+                <label>3. Quais dessas comidas são famosas em Singapura? (Selecione todas que se aplicam)</label><br>
+                <input type="checkbox" id="laksa" name="comida" value="laksa">
+                <label for="laksa">Laksa</label><br>
+                <input type="checkbox" id="satay" name="comida" value="satay">
+                <label for="satay">Satay</label><br>
+                <input type="checkbox" id="ramen" name="comida" value="ramen">
+                <label for="ramen">Ramen</label><br>
+                <input type="checkbox" id="nasi-lemak" name="comida" value="nasi-lemak">
+                <label for="nasi-lemak">Nasi Lemak</label><br><br>
+
+                <!-- Pergunta 4 - Date -->
+                <label for="data-visita">4. Em que data você visitou Singapura pela última vez?</label><br>
+                <input type="date" id="data-visita" name="data-visita"><br><br>
+
+                <!-- Pergunta 5 - Time -->
+                <label for="hora-visita">5. A que horas você chegou ao aeroporto de Changi?</label><br>
+                <input type="time" id="hora-visita" name="hora-visita"><br><br>
+
+                <!-- Pergunta 6 - Número -->
+                <label for="visitantes">6. Quantas vezes você já visitou Singapura?</label><br>
+                <input type="number" id="visitantes" name="visitantes" min="0" max="100"><br><br>
+
+                <!-- Pergunta 7 - Cor -->
+                <label for="cor-preferida">7. Qual cor você associa a Singapura?</label><br>
+                <input type="color" id="cor-preferida" name="cor-preferida"><br><br>
+
+                <!-- Pergunta 8 - Range -->
+                <label for="satisfacao">8. De 1 a 10, quão satisfeito(a) ficou com a sua última viagem a
+                    Singapura?</label><br>
+                <input type="range" id="satisfacao" name="satisfacao" min="1" max="10"><br><br>
+
+                <!-- Pergunta 9 - Textarea -->
+                <label for="comentarios">9. Escreva um breve comentário sobre o que mais gostou em
+                    Singapura:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+                <!-- Pergunta 10 - Imagem -->
+                <label for="imagem-singapura">10. Faça upload de uma imagem da sua viagem a Singapura
+                    (opcional):</label><br>
+                <input type="file" id="imagem-singapura" name="imagem-singapura" accept="image/*"><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Acçôes</legend>
+
+                <input type="reset" value="Resetar Formulário">
+                <input type="submit" value="Enviar Respostas">
+
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+
 </html>
