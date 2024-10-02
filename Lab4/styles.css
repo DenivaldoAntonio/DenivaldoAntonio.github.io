@@ -3,19 +3,19 @@ body{
 }
 
 header{
-     background-color:  black;
+     background-color:  rgb(81, 36, 158);
      margin:  10px;
      padding: 5;
  }
 
  nav{
-     background-color: aliceblue;
+     background-color: rgb(81, 36, 158);
      margin: 10px;
      padding: 5px;
  }
 
  h2{
-     background-color: black;
+     background-color: white;
      margin: auto;
      padding: 5px;
  }
