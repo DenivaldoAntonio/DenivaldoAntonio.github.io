@@ -3,22 +3,26 @@ body{
 }
 
 header{
-     background-color:  rgb(6, 2, 12);
+     background-color: seagreen;
      margin:  10px;
      padding: 5;
-     color: white;
- }
+    color: white;
+    }
 
  h1{
-    background-color:  rgb(6, 2, 12);
+    background-color:  seagreen;
     margin:  10px;
     padding: 5;
-    color: white;
+    color:white;
 }
 
  h2{
-     background-color: black;
+     background-color: seagreen;
      margin: 10px;
      padding: 5px;
      color: white;
+ }
+
+ nav a{
+    color: white;
  }
