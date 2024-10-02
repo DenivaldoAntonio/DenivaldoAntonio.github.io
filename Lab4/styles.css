@@ -13,3 +13,9 @@ header{
      margin: 10px;
      padding: 5px;
  }
+
+ h2{
+     background-color: black;
+     margin: auto;
+     padding: 5px;
+ }
