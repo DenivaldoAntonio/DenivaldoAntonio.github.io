@@ -1,3 +1,15 @@
 body{
      background-color: silver;
 }
+
+header{
+     background-color:  black;
+     margin:  10px;
+     padding: 5;
+ }
+
+ nav{
+     background-color: aliceblue;
+     margin: 10px;
+     padding: 5px;
+ }
