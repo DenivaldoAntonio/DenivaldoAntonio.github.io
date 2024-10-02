@@ -1,12 +1,11 @@
 body{
-     background-color: silver;
+     background-color: white;
      margin: 0;
      padding: 0;
 }
 
 header{
    background-color: seagreen;
-   padding: 20;
    color: white;
    text-align: center;
 
@@ -34,4 +33,30 @@ header{
     background-color: seagreen;
     color: white;
     text-align: center;
+   
  }
+
+ nav a{
+   text-decoration: none;
+   color: white;
+ }
+
+ nav{
+   background-color: black;
+   margin: 0;
+   padding: 0;
+ }
+
+ footer{
+   background-color: black;
+   text-align: center;
+   color: white;
+ }
+
+ #fotografias h3, #video h3, #poema h3 {
+  color: seagreen;
+  font-size: 24px;
+  border-bottom: 2px solids seagreen;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
