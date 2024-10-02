@@ -3,13 +3,15 @@ body{
 }
 
 header{
-     background-color:  rgb(81, 36, 158);
+     background-color:  rgb(6, 2, 12);
      margin:  10px;
      padding: 5;
+     color: white;
  }
 
  h2{
-     background-color: rgb(81, 36, 158);
+     background-color: black;
      margin: 10px;
      padding: 5px;
+     color: white;
  }
