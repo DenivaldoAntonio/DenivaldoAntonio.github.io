@@ -1,5 +1,6 @@
 body{
-     background-color: white;
+    font-family: Arial, sans-serif;
+     background-color: gray;
      margin: 0;
      padding: 0;
 }
@@ -8,8 +9,7 @@ header{
    background-color: seagreen;
    color: white;
    text-align: center;
-
-    }
+  }
 
  h1{
     background-color:  seagreen;
@@ -44,19 +44,70 @@ header{
  nav{
    background-color: black;
    margin: 0;
-   padding: 0;
+   padding: 10px;
  }
 
  footer{
    background-color: black;
    text-align: center;
    color: white;
+   padding: 10px;
+   margin-top: 20px;
  }
 
- #fotográfias h3, #video h3, #poema h3 {
+ main{
+  padding: 20px;
+  background-color: seagreen;
+  margin: 20px;
+  border-radius: 8px;
+ }
+
+
+p {
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+ #Fotografias h3, #video h3, #poema h3 {
   color: seagreen;
   font-size: 24px;
   border-bottom: 2px solids seagreen;
   padding-bottom: 10px;
   margin-bottom: 20px;
+
+}
+
+#Fotografias img{
+    border: 10px solid silver;
+    border-radius: 10px;
+    margin:  20px;
+}
+
+
+#Fotografias img:hover{
+  opacity: 0.5;
+
+}
+
+.poema {
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+label {
+  font-size: small;
+}
+
+input {
+  font-size: medium;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
 }
