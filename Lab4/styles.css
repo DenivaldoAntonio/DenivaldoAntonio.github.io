@@ -31,7 +31,7 @@ nav a {
   box-shadow: 1px 1px 1px lightgray;
   border-radius: 2px;
 }
-p a{
+p a:hover{
   padding: 5px;
   background-color: whitesmoke;
   text-decoration: none;
