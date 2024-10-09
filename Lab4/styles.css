@@ -1,26 +1,26 @@
-body{
-    font-family: Arial, sans-serif;
-     background-color: gray;
-    
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+
 }
 
- main img{
-  max-width: 500px;  
+main img {
+  max-width: 500px;
   max-height: 500px;
- }
+}
 
-header{
-   background-color: seagreen;
-   color: white;
-   text-align: center;
-  }
+header {
+  background-color: seagreen;
+  color: white;
+  text-align: center;
+}
 
- h1{
-    background-color:  seagreen;
-    margin:  20px;
-    padding: 10px;
-    color:white;
-    text-align: center;
+h1 {
+  background-color: seagreen;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
 }
 
 nav a {
@@ -32,52 +32,54 @@ nav a {
   border-radius: 2px;
 }
 
- h2{
-     background-color: black;
-     margin: 0;
-     padding: 5px;
-     color: white;
-     text-align: center;
- }
+h2 {
+  background-color: black;
+  margin: 0;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
 
- nav a:hover{
-    background-color: seagreen;
-    color: white;
- }
+nav a:hover {
+  background-color: seagreen;
+  color: white;
+}
 
- 
 
- nav{
-   background-color: black;
-   margin: 0;
-   padding: 10px;
- }
 
- footer{
-   background-color: black;
-   text-align: center;
-   color: white;
-   padding: 10px;
-   margin-top: 20px;
- }
+nav {
+  background-color: black;
+  margin: 0;
+  padding: 10px;
+}
 
- main{
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+main {
   padding: 20px;
   background-color: seagreen;
   margin: 20px;
   border-radius: 8px;
- }
-
-
-p{
-    font-style: italic;
-    margin-bottom: 20px;
-    line-height: 1.8;
-    text-align: justify;
 }
 
 
- #Fotografias h3, #video h3, #poema h3 {
+p {
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+
+#Fotografias h3,
+#video h3,
+#poema h3 {
   color: black;
   font-size: 24px;
   border-bottom: 2px seagreen;
@@ -86,7 +88,7 @@ p{
 
 }
 
-#Fotografias img{
+#Fotografias img {
   background-color: whitesmoke;
   margin: 2px;
   text-decoration: none;
@@ -98,7 +100,7 @@ p{
 }
 
 
-#Fotografias img:hover{
+#Fotografias img:hover {
   opacity: 0.5;
 
 }
@@ -118,7 +120,8 @@ input {
   font-size: medium;
 }
 
-label, input {
+label,
+input {
   display: block;
   margin-bottom: 10px;
 }
