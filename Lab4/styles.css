@@ -25,7 +25,6 @@ header{
 
 }
 nav a {
-  padding: 20px;
   background-color: whitesmoke;
   margin: 2px;
   text-decoration: none;
@@ -85,7 +84,7 @@ p {
  #Fotografias h3, #video h3, #poema h3 {
   color: black;
   font-size: 24px;
-  border-bottom: 2px solids seagreen;
+  border-bottom: 2px seagreen;
   padding-bottom: 10px;
   margin-bottom: 20px;
 
