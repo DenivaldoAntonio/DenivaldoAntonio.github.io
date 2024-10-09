@@ -47,7 +47,7 @@ h2 {
   text-align: center;
 }
 
-nav a:hover {
+p , nav a:hover {
   background-color: seagreen;
   color: white;
 }
