@@ -44,14 +44,11 @@ nav a {
      padding: 5px;
      color: white;
      text-align: center;
-
  }
 
  nav a:hover{
     background-color: seagreen;
     color: white;
-    text-align: center;
-   
  }
 
  
