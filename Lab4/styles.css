@@ -29,8 +29,8 @@ nav a {
   margin: 2px;
   text-decoration: none;
   color: black;
-  box-shadow: 2px 3px 3px lightgray;
-  border-radius: 5px;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 2px;
 }
 
  h2{
@@ -91,9 +91,12 @@ p {
 }
 
 #Fotografias img{
-    border: 10px solid silver;
-    border-radius: 10px;
-    margin:  20px;
+  background-color: whitesmoke;
+  margin: 2px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 2px;
 }
 
 
