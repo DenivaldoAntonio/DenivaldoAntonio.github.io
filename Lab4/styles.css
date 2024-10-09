@@ -97,6 +97,8 @@ p {
   color: black;
   box-shadow: 1px 1px 1px lightgray;
   border-radius: 2px;
+  max-width: 500;
+  max-height: 500px;
 }
 
 
