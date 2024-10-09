@@ -32,6 +32,12 @@ nav a {
   border-radius: 2px;
 }
 
+.Fotografias, .videos, .poema div{
+  background-color: greenyellow;
+  margin: 10px;
+  padding: 10px;
+}
+
  h2{
      background-color: black;
      margin: 0;
