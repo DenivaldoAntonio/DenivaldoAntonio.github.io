@@ -50,10 +50,7 @@ nav a {
    
  }
 
- nav a{
-   text-decoration: none;
-   color: white;
- }
+ 
 
  nav{
    background-color: black;
@@ -86,7 +83,7 @@ p {
 
 
  #Fotografias h3, #video h3, #poema h3 {
-  color: seagreen;
+  color: black;
   font-size: 24px;
   border-bottom: 2px solids seagreen;
   padding-bottom: 10px;
