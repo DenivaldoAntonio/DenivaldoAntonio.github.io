@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: gray;
+
+}
+
+main img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+header {
+  background-color: seagreen;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  background-color: seagreen;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+nav a {
+  background-color: whitesmoke;
+  margin: 2px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 2px;
+}
+p a:hover{
+  padding: 5px;
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: black;
+  box-shadow: 2px 2px 2px lightgray;
+  border-radius: 5px;
+}
+h2 {
+  background-color: black;
+  margin: 0;
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+ a:hover {
+  background-color: seagreen;
+  color: white;
+}
+
+
+
+nav {
+  background-color: black;
+  margin: 0;
+  padding: 10px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+main {
+  padding: 20px;
+  background-color: seagreen;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+
+p {
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+
+#Fotografias h3,
+#video h3,
+#poema h3 {
+  color: black;
+  font-size: 24px;
+  border-bottom: 2px seagreen;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+
+}
+
+#Fotografias img {
+  background-color: whitesmoke;
+  margin: 2px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 2px;
+  max-width: 500;
+  max-height: 500px;
+}
+
+
+#Fotografias img:hover {
+  opacity: 0.5;
+
+}
+
+.poema {
+  font-style: italic;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+label {
+  font-size: small;
+}
+
+input {
+  font-size: medium;
+}
+
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
