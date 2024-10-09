@@ -132,3 +132,34 @@ input {
   display: block;
   margin-bottom: 10px;
 }
+
+/* Estilizando o cabeçalho */
+th {
+  background-color: #002855; /* Cor azul escura */
+  color: white;
+  padding: 10px;
+}
+
+/* Estilizando as linhas pares */
+tr:nth-child(even) {
+  background-color: #d9d9d9; /* Cor de fundo cinza claro */
+}
+
+/* Estilizando as linhas ímpares */
+tr:nth-child(odd) {
+  background-color: #ffffff; /* Cor de fundo branca */
+}
+
+/* Adicionando bordas e espaçamento */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Estilizando os meses e o ranking para melhor visualização */
+td {
+  font-size: 14px;
+  font-weight: bold;
+}
