@@ -18,12 +18,12 @@ header{
 
  h1{
     background-color:  seagreen;
-    margin:  10px;
-    padding: 5;
+    margin:  20px;
+    padding: 10px;
     color:white;
     text-align: center;
-
 }
+
 nav a {
   background-color: whitesmoke;
   margin: 2px;
