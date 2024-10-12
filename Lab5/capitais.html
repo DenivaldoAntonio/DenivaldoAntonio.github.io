@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitais</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #ddd;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    nav a {
+      padding: 20px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #aaa;
+      color: white;
+    }
+
+    nav a:last-child {
+      background: #777;
+      color: white;
+    }
+
+    nav a:link,
+    nav a:visited {
+      color: #333;
+    }
+
+    nav a:hover,
+    nav a:active {
+      color: white;
+    }
+
+    section {
+      height: 100vh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2em;
+    }
+
+    #poema {
+      background: #f0e68c;
+    }
+
+    #paisagem {
+      background: #87ceeb;
+    }
+
+    #cidades {
+      background: #98fb98;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Capitais</h1>
+    <nav>
+      <a href="#poema">Poema</a>
+      <a href="#paisagem">Paisagem</a>
+      <a href="#cidades">Capitais</a>
+      <a href="#">A minha cidade</a>
+    </nav>
+  </header>
+
+  <section id="poema">
+    <p>Seção Poema</p>
+  </section>
+
+  <section id="paisagem">
+    <p>Seção Paisagem</p>
+  </section>
+
+  <section id="cidades">
+    <p>Seção Capitais</p>
+  </section>
+
+</body>
+</html>
