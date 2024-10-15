@@ -1,8 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
+    padding: 0; 
+    margin: 0;
+  }
+
+header, main, article {
+    /* centrando o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+
+main {
+    height: 90vh;
+  background: purple;
 }
 
 body {
@@ -11,14 +23,11 @@ body {
 }
 
 header {
-    background: #ddd;
+    background: red;
     position: sticky;
+    height: 10vh;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+  }
 
 h1 {
     font-size: 1.5em;
@@ -37,25 +46,26 @@ nav a:hover {
 
 nav a:last-child {
     background: #777;
+   
     color: white;
 }
+article:last-child {
+    height: 100vh;
+    background: black;
+    color: white;
+  }
 
 article {
-    height: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-}
+    height: 100vh;
+    background: orange;
+  }
+  
 
 #poema {
     background-color: #f0e68c; /* Amarelo suave */
-    padding: 20px; /* Espaçamento interno */
     border-radius: 8px; /* Cantos arredondados */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center; /* Centraliza o texto */
-    height: auto; /* Altura automática para acomodar o texto */
 }
 
 #poema pre {
@@ -112,8 +122,6 @@ article {
 }
 
 #cidades section {
-    margin: 10px; /* Espaçamento entre as seções */
-    width: 100px; /* Largura fixa para as seções */
     text-align: center; /* Centraliza o texto */
     border-radius: 8px; /* Cantos arredondados para as seções */
     background-color: #e0e0e0; /* Fundo mais claro que o do article */
@@ -125,8 +133,6 @@ article {
 }
 
 #cidades img {
-    width: 100%; /* Faz com que a imagem ocupe toda a largura da seção */
-    height: auto; /* Mantém a proporção da imagem */
     border-radius: 4px 4px 0 0; /* Cantos arredondados apenas na parte superior */
 }
 
