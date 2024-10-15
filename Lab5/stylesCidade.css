@@ -1,33 +1,14 @@
 * {
-    font-family: sans-serif;
-    padding: 0; 
     margin: 0;
-  }
-
-header, main, article {
-    /* centrando o texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-  }
-
-main {
-    height: 90vh;
-  background: purple;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
     background: #f4f4f4;
     color: #333;
 }
-
-header {
-    background: red;
-    position: sticky;
-    height: 10vh;
-    top: 0;
-  }
 
 h1 {
     font-size: 1.5em;
@@ -46,98 +27,155 @@ nav a:hover {
 
 nav a:last-child {
     background: #777;
-   
     color: white;
 }
-article:last-child {
+
+header, main, article {
+    /* centrando o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+  }
+  
+  header {
+    background: red;
+    position: sticky;
+    height: 10vh;
+    top: 0;
+  }
+  
+  main {
+      height: 90vh;
+    background: purple;
+  }
+  
+  article {
+    height: 100vh;
+    background: orange;
+  }
+  
+  article:last-child {
     height: 100vh;
     background: black;
     color: white;
   }
 
-article {
-    height: 100vh;
-    background: orange;
-  }
-  
-
 #poema {
-    background-color: #f0e68c; /* Amarelo suave */
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    text-align: center; /* Centraliza o texto */
+    background-color: #f0e68c;
+    /* Amarelo suave */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra leve */
+    text-align: center;
+    /* Centraliza o texto */
+    height: auto;
+    /* Altura automática para acomodar o texto */
 }
 
 #poema pre {
-    font-size: 1.5em; /* Aumenta o tamanho do texto do poema */
-    color: #333; /* Cor do texto */
-    margin: 0; /* Remove margem padrão */
-    font-weight: bold; /* Texto do poema em negrito */
-    font-family: 'Georgia', serif; /* Fonte serifada para o poema */
+    font-size: 1.5em;
+    /* Aumenta o tamanho do texto */
+    color: #333;
+    /* Cor do texto */
+    margin: 0;
+    /* Remove margem padrão */
 }
-
-#poema .autor {
-    font-size: 1em; /* Tamanho menor para o nome do autor */
-    color: #666; /* Cor mais clara para diferenciar do poema */
-    font-weight: normal; /* Mantém o nome do autor sem destaque */
-    text-align: center; /* Centraliza o texto */
-}
-
 
 #paisagem {
-    position: relative; /* Permite posicionamento absoluto do texto */
-    overflow: hidden; /* Impede que elementos internos excedam o contêiner */
-    border-radius: 8px; /* Cantos arredondados */
+    position: relative;
+    /* Permite posicionamento absoluto do texto */
+    overflow: hidden;
+    /* Impede que elementos internos excedam o contêiner */
+    border-radius: 8px;
+    /* Cantos arredondados */
 }
 
 .image-container {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    height: auto; /* Altura automática */
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    height: auto;
+    /* Altura automática */
 }
 
 .image-container img {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Cantos arredondados */
+    width: 100%;
+    /* Ocupa toda a largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Cantos arredondados */
 }
 
 .image-container p {
-    position: absolute; /* Permite posicionamento no canto inferior */
-    bottom: 10px; /* Distância do fundo */
-    right: 20px; /* Distância da direita */
-    color: #fff; /* Cor do texto */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-    padding: 5px; /* Espaçamento interno */
-    border-radius: 5px; /* Cantos arredondados */
+    position: absolute;
+    /* Permite posicionamento no canto inferior */
+    bottom: 10px;
+    /* Distância do fundo */
+    right: 20px;
+    /* Distância da direita */
+    color: #fff;
+    /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro semi-transparente */
+    padding: 5px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Cantos arredondados */
 }
 
 #cidades {
     display: flex;
-    flex-direction: row; /* Alinha as seções em linha */
-    flex-wrap: wrap; /* Permite que as seções se movam para a linha seguinte */
-    justify-content: center; /* Centraliza as seções horizontalmente */
-    align-items: center; /* Alinha as seções verticalmente */
+    flex-direction: row;
+    /* Alinha as seções em linha */
+    flex-wrap: wrap;
+    /* Permite que as seções se movam para a linha seguinte */
+    justify-content: center;
+    /* Centraliza as seções horizontalmente */
+    align-items: center;
+    /* Alinha as seções verticalmente */
     padding: 20px;
-    background-color: #F0F0F0; /* Cor de fundo igual ao restante da página */
+    background-color: #F0F0F0;
+    /* Cor de fundo igual ao restante da página */
 }
 
 #cidades section {
-    text-align: center; /* Centraliza o texto */
-    border-radius: 8px; /* Cantos arredondados para as seções */
-    background-color: #e0e0e0; /* Fundo mais claro que o do article */
-    transition: background-color 0.3s ease; /* Transição suave de cor */
+    margin: 10px;
+    /* Espaçamento entre as seções */
+    width: 100px;
+    /* Largura fixa para as seções */
+    text-align: center;
+    /* Centraliza o texto */
+    border-radius: 8px;
+    /* Cantos arredondados para as seções */
+    background-color: #e0e0e0;
+    /* Fundo mais claro que o do article */
+    transition: background-color 0.3s ease;
+    /* Transição suave de cor */
 }
 
 #cidades section:hover {
-    background-color: #d0d0d0; /* Cor de fundo ao passar o mouse */
+    background-color: #d0d0d0;
+    /* Cor de fundo ao passar o mouse */
 }
 
 #cidades img {
-    border-radius: 4px 4px 0 0; /* Cantos arredondados apenas na parte superior */
+    width: 100%;
+    /* Faz com que a imagem ocupe toda a largura da seção */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 4px 4px 0 0;
+    /* Cantos arredondados apenas na parte superior */
 }
 
 #cidades div {
-    font-weight: bold; /* Negrito para os nomes das cidades */
-    margin-top: 5px; /* Espaço entre a imagem e o nome */
-    color: #003366; /* Cor do texto */
+    font-weight: bold;
+    /* Negrito para os nomes das cidades */
+    margin-top: 5px;
+    /* Espaço entre a imagem e o nome */
+    color: #003366;
+    /* Cor do texto */
 }
