@@ -39,14 +39,13 @@ header, main, article {
   }
   
   header {
-    background: red;
     position: sticky;
     height: 10vh;
     top: 0;
   }
   
   main {
-      height: 90vh;
+    height: 90vh;
     background: purple;
   }
   
