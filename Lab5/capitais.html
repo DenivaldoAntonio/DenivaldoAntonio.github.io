@@ -50,7 +50,6 @@
     }
 
     article {
-      height: 100vh;
       padding: 20px;
       display: flex;
       justify-content: center;
@@ -73,12 +72,14 @@
     .image-container {
       position: relative;
       width: 100vw;
-      height: auto;
+      height: 100vh; /* Define a altura como 100% da altura da tela */
+      overflow: hidden;
     }
 
     .image-container img {
       width: 100vw;
-      height: auto;
+      height: 100%;
+      object-fit: cover; /* A imagem preenche o container sem distorção */
     }
 
     .image-container p {
@@ -123,7 +124,7 @@
   <article id="paisagem">
     <div class="image-container">
       <img src="images/singapuraC.jpg" alt="Paisagem de Singapura">
-      Image by <a href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Jason Goh</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Pixabay</a>
+      <p>Imagem por <a href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Jason Goh</a> de <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Pixabay</a></p>
     </div>
   </article>
 
