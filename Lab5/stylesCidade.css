@@ -1,11 +1,65 @@
-* {
-    font-family: sans-serif;
-    padding: 0; 
-    margin: 0;
+  body {
+    background: #f4f4f4;
+    color: #333;
   }
-  
-  
-  header, main, article {
+
+  header {
+    background: #ddd;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav a:last-child {
+    background: #777;
+    color: white;
+  }
+
+  section {
+    flex: 0 1 30%; /* Cada seção ocupará 30% da largura, podendo encolher se necessário */
+    margin: 10px; /* Espaço entre as seções */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  section img {
+    width: 100%; /* A imagem ocupará 100% da largura da seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    height: auto; /* Altura automática para manter a proporção */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+nav a {
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #aaa;
+    color: white;
+}
+
+
+header, main, article {
     /* centrando o texto */
     display: flex;
     justify-content: center;
@@ -28,12 +82,6 @@
   article {
     height: 100vh;
     background: orange;
-  }
-  
-  article:last-child {
-    height: 100vh;
-    background: black;
-    color: white;
   }
   
   article:last-child {
@@ -73,6 +121,7 @@
     /* Impede que elementos internos excedam o contêiner */
     border-radius: 8px;
     /* Cantos arredondados */
+    background-color: khaki ;
 }
 
 .image-container {
@@ -108,6 +157,7 @@
     /* Cantos arredondados */
 }
 
+
 #cidades {
     display: flex;
     flex-direction: row;
@@ -121,6 +171,8 @@
     padding: 20px;
     background-color: #F0F0F0;
     /* Cor de fundo igual ao restante da página */
+    background: #98fb98;
+
 }
 
 #cidades section {

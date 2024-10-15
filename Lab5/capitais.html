@@ -4,9 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stylesCidade.css">
+  <title>Capitais</title>
 
-<title>Capitais</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background: #ddd;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    nav a {
+      padding: 20px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #aaa;
+      color: white;
+    }
+
+    nav a:last-child {
+      background: #777;
+      color: white;
+    }
+
+    article {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #cidades {
+      display: flex;
+      flex-wrap: wrap; /* Permite que as imagens quebrem em linhas */
+      justify-content: space-between; /* Espaça os itens */
+      background: #98fb98;
+    }
+
+    section {
+      flex: 0 1 30%; /* Cada seção ocupará 30% da largura, podendo encolher se necessário */
+      margin: 10px; /* Espaço entre as seções */
+      text-align: center; /* Centraliza o texto */
+    }
+
+    section img {
+      width: 100%; /* A imagem ocupará 100% da largura da seção */
+      border-radius: 8px; /* Bordas arredondadas */
+      height: auto; /* Altura automática para manter a proporção */
+    }
+  </style>
 </head>
 
 <body>
@@ -23,23 +90,18 @@
 
   <article id="poema">
     <pre>
-      Viajar. Perder países!
+      Viajar. Perder paises!
       Ser outro constantemente
       Por a alma não ter raízes
       De viver de ver somente
+      Fernando Pessoa
     </pre>
-    <div class="autor">Fernando Pessoa</div>
   </article>
-
 
   <article id="paisagem">
     <div class="image-container">
       <img src="images/singapuraC.jpg" alt="Paisagem de Singapura">
-      <p>Imagem por <a
-          href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Jason
-          Goh</a> de <a
-          href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Pixabay</a>
-      </p>
+      <p>Imagem por <a href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Jason Goh</a> de <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Pixabay</a></p>
     </div>
   </article>
 
