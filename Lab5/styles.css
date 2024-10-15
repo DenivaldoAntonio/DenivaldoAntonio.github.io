@@ -1,7 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: gray;
-
+  background-color: #F0F0F0; /* Cinza claro para o fundo */
 }
 
 main img {
@@ -10,13 +9,14 @@ main img {
 }
 
 header {
-  background-color: seagreen;
+  background-color: #003366; /* Azul profundo inspirado no Marina Bay Sands */
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
 h1 {
-  background-color: seagreen;
+  background-color: #003366;
   margin: 20px;
   padding: 10px;
   color: white;
@@ -24,21 +24,20 @@ h1 {
 }
 
 nav a {
-  background-color: whitesmoke;
+  background-color: #D9EAD3; /* Verde claro inspirado pelos jardins de Singapura */
   margin: 2px;
   text-decoration: none;
-  color: black;
+  color: #003366; /* Azul profundo para o contraste */
   box-shadow: 1px 1px 1px lightgray;
   border-radius: 2px;
-}
-p a:hover{
   padding: 5px;
-  background-color: whitesmoke;
-  text-decoration: none;
-  color: black;
-  box-shadow: 2px 2px 2px lightgray;
-  border-radius: 5px;
 }
+
+nav a:hover {
+  background-color: #FF6600; /* Laranja do pôr do sol tropical */
+  color: white;
+}
+
 h2 {
   background-color: black;
   margin: 0;
@@ -47,17 +46,11 @@ h2 {
   text-align: center;
 }
 
- a:hover {
-  background-color: seagreen;
-  color: white;
-}
-
-
-
 nav {
   background-color: black;
   margin: 0;
   padding: 10px;
+  text-align: center;
 }
 
 footer {
@@ -70,11 +63,10 @@ footer {
 
 main {
   padding: 20px;
-  background-color: seagreen;
+  background-color: #006633; /* Verde vibrante dos jardins */
   margin: 20px;
   border-radius: 8px;
 }
-
 
 p {
   font-style: italic;
@@ -83,16 +75,14 @@ p {
   text-align: justify;
 }
 
-
 #Fotografias h3,
 #video h3,
 #poema h3 {
   color: black;
   font-size: 24px;
-  border-bottom: 2px seagreen;
+  border-bottom: 2px solid #006633; /* Linha verde vibrante */
   padding-bottom: 10px;
   margin-bottom: 20px;
-
 }
 
 #Fotografias img {
@@ -102,14 +92,12 @@ p {
   color: black;
   box-shadow: 1px 1px 1px lightgray;
   border-radius: 2px;
-  max-width: 500;
+  max-width: 500px;
   max-height: 500px;
 }
 
-
 #Fotografias img:hover {
   opacity: 0.5;
-
 }
 
 .poema {
@@ -133,24 +121,20 @@ input {
   margin-bottom: 10px;
 }
 
-/* Estilizando o cabeçalho */
 th {
-  background-color: #002855; /* Cor azul escura */
+  background-color: #002855; /* Azul escuro */
   color: white;
   padding: 10px;
 }
 
-/* Estilizando as linhas pares */
 tr:nth-child(even) {
-  background-color: #d9d9d9; /* Cor de fundo cinza claro */
+  background-color: #d9d9d9; /* Cinza claro */
 }
 
-/* Estilizando as linhas ímpares */
 tr:nth-child(odd) {
-  background-color: #ffffff; /* Cor de fundo branca */
+  background-color: #ffffff; /* Branco */
 }
 
-/* Adicionando bordas e espaçamento */
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -158,29 +142,7 @@ table, th, td {
   text-align: center;
 }
 
-/* Estilizando os meses e o ranking para melhor visualização */
 td {
   font-size: 14px;
   font-weight: bold;
-}
-
-    
-* {
-  margin:5px;  
-  padding:5px;  
-  box-sizing: border-box; /* medidas sao tomadas da borda */
-}
-
-article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  width: 100px;
-  height: 100%;
-  border-radius: 0 20px 20px 0;
-  
-  font-weight: bold;
-  
-  background: white;
 }
