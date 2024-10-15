@@ -39,6 +39,18 @@ nav a:hover {
   color: white;
 }
 
+
+article {
+  height: 100vh;
+  width:  50vh;
+  background: orange;
+}
+
+article:last-child {
+  height: 100vh;
+  background: black;
+  color: white;
+}
 #poema{
   font-weight: bolde ;
   font-style:italic;
