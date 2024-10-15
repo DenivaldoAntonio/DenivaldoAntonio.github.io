@@ -1,27 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
 body {
   background: #f4f4f4;
   color: #333;
-}
-
-* {
-  font-family: sans-serif;
-  padding: 0; 
-  margin: 0;
-}
-
-header, main, article {
-  /* centrando o texto */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-}
-
-nav a {
-  padding: 20px;
-  color: #333;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
 header {
@@ -31,7 +17,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  padding: 15px 15px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+nav a {
+  padding: 12px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
 nav a:hover {
@@ -39,24 +36,36 @@ nav a:hover {
   color: white;
 }
 
-
-article {
-  width:  100vh;
-  background: orange;
-}
-
-article:last-child {
-  height: 100vh;
-  background: black;
+nav a:last-child {
+  background: #777;
   color: white;
 }
 
-.autor {
-  font-weight: bold;
-  font-style: italic;
+nav a:link,
+nav a:visited {
+  color: #333;
 }
 
-.paisagem{
-position: sticky;
+nav a:hover,
+nav a:active {
+  color: white;
+}
 
+/* Estilização do artigo do poema */
+article#poema {
+  width: 100vw;
+  height: 50vh;
+  background: #add8e6; /* cor de fundo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#paisagem {
+  background: #87ceeb;
+}
+
+#cidades {
+  background: #98fb98;
 }
