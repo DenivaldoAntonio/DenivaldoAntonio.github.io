@@ -51,7 +51,12 @@ article:last-child {
   background: black;
   color: white;
 }
-#poema{
-  font-weight: bolde ;
-  font-style:italic;
+
+.poema {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.autor {
+  font-weight: bold;
+  font-style: italic;
 }
