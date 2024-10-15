@@ -49,16 +49,6 @@
       color: white;
     }
 
-    nav a:link,
-    nav a:visited {
-      color: #333;
-    }
-
-    nav a:hover,
-    nav a:active {
-      color: white;
-    }
-
     article {
       height: 100vh;
       padding: 20px;
@@ -78,6 +68,32 @@
 
     #cidades {
       background: #98fb98;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100vw;
+      height: auto;
+    }
+
+    .image-container img {
+      width: 100vw;
+      height: auto;
+    }
+
+    .image-container p {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .image-container p a {
+      color: #fff;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -105,8 +121,10 @@
   </article>
 
   <article id="paisagem">
-    <iframe src="images/singapuraC.jpg" frameborder="0"></iframe>
-    <p>From Jason Goh</p>
+    <div class="image-container">
+      <img src="images/singapuraC.jpg" alt="Paisagem de Singapura">
+      Image by <a href="https://pixabay.com/users/cegoh-94852/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Jason Goh</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2718300">Pixabay</a>
+    </div>
   </article>
 
   <article id="cidades">
