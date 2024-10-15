@@ -1,27 +1,27 @@
-
 nav a:hover {
   background: #aaa;
   color: white;
 }
 
 body {
-background: #f4f4f4;
-color: #333;
+  background: #f4f4f4;
+  color: #333;
 }
 
 
 nav a {
-padding: 20px;
-color: #333;
-text-decoration: none;
+  padding: 20px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 header {
-background: #ddd;
-position: sticky;
-top: 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  background: #ddd;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
-
