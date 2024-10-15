@@ -1,214 +1,37 @@
-  body {
-    background: #f4f4f4;
-    color: #333;
-  }
-
-  header {
-    background: #ddd;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  nav a:last-child {
-    background: #777;
-    color: white;
-  }
-
-  section {
-    flex: 0 1 30%; /* Cada seção ocupará 30% da largura, podendo encolher se necessário */
-    margin: 10px; /* Espaço entre as seções */
-    text-align: center; /* Centraliza o texto */
-  }
-
-  section img {
-    width: 100%; /* A imagem ocupará 100% da largura da seção */
-    border-radius: 8px; /* Bordas arredondadas */
-    height: auto; /* Altura automática para manter a proporção */
-  }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body {
-    background: #f4f4f4;
-    color: #333;
-}
-
-
-nav a {
-    padding: 20px;
-    color: #333;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background: #aaa;
-    color: white;
+  font-family: sans-serif;
+  padding: 0; 
+  margin: 0;
 }
 
 
 header, main, article {
-    /* centrando o texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-  }
-  
-  header {
-    background: red;
-    position: sticky;
-    height: 10vh;
-    top: 0;
-  }
-  
-  main {
-      height: 90vh;
-    background: purple;
-  }
-  
-  article {
-    height: 100vh;
-    background: orange;
-  }
-  
-  article:last-child {
-    height: 100vh;
-    background: black;
-    color: white;
-  }
-
-#poema {
-    background-color: #f0e68c;
-    /* Amarelo suave */
-    padding: 20px;
-    /* Espaçamento interno */
-    border-radius: 8px;
-    /* Cantos arredondados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
-    text-align: center;
-    /* Centraliza o texto */
-    height: auto;
-    /* Altura automática para acomodar o texto */
+  /* centrando o texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
 }
 
-#poema pre {
-    font-size: 1.5em;
-    /* Aumenta o tamanho do texto */
-    color: #333;
-    /* Cor do texto */
-    margin: 0;
-    /* Remove margem padrão */
+header {
+  background: red;
+  position: sticky;
+  height: 10vh;
+  top: 0;
 }
 
-#paisagem {
-    position: relative;
-    /* Permite posicionamento absoluto do texto */
-    overflow: hidden;
-    /* Impede que elementos internos excedam o contêiner */
-    border-radius: 8px;
-    /* Cantos arredondados */
-    background-color: khaki ;
+main {
+    height: 90vh;
+  background: purple;
 }
 
-.image-container {
-    width: 100%;
-    /* Ocupa toda a largura do contêiner */
-    height: auto;
-    /* Altura automática */
+article {
+  height: 100vh;
+  background: orange;
 }
 
-.image-container img {
-    width: 100%;
-    /* Ocupa toda a largura do contêiner */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    border-radius: 8px;
-    /* Cantos arredondados */
-}
-
-.image-container p {
-    position: absolute;
-    /* Permite posicionamento no canto inferior */
-    bottom: 10px;
-    /* Distância do fundo */
-    right: 20px;
-    /* Distância da direita */
-    color: #fff;
-    /* Cor do texto */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fundo escuro semi-transparente */
-    padding: 5px;
-    /* Espaçamento interno */
-    border-radius: 5px;
-    /* Cantos arredondados */
-}
-
-
-#cidades {
-    display: flex;
-    flex-direction: row;
-    /* Alinha as seções em linha */
-    flex-wrap: wrap;
-    /* Permite que as seções se movam para a linha seguinte */
-    justify-content: center;
-    /* Centraliza as seções horizontalmente */
-    align-items: center;
-    /* Alinha as seções verticalmente */
-    padding: 20px;
-    background-color: #F0F0F0;
-    /* Cor de fundo igual ao restante da página */
-    background: #98fb98;
-
-}
-
-#cidades section {
-    margin: 10px;
-    /* Espaçamento entre as seções */
-    width: 100px;
-    /* Largura fixa para as seções */
-    text-align: center;
-    /* Centraliza o texto */
-    border-radius: 8px;
-    /* Cantos arredondados para as seções */
-    background-color: #e0e0e0;
-    /* Fundo mais claro que o do article */
-    transition: background-color 0.3s ease;
-    /* Transição suave de cor */
-}
-
-#cidades section:hover {
-    background-color: #d0d0d0;
-    /* Cor de fundo ao passar o mouse */
-}
-
-#cidades img {
-    width: 100%;
-    /* Faz com que a imagem ocupe toda a largura da seção */
-    height: auto;
-    /* Mantém a proporção da imagem */
-    border-radius: 4px 4px 0 0;
-    /* Cantos arredondados apenas na parte superior */
-}
-
-#cidades div {
-    font-weight: bold;
-    /* Negrito para os nomes das cidades */
-    margin-top: 5px;
-    /* Espaço entre a imagem e o nome */
-    color: #003366;
-    /* Cor do texto */
+article:last-child {
+  height: 100vh;
+  background: black;
+  color: white;
 }
