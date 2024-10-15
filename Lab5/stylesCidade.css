@@ -1,0 +1,27 @@
+
+nav a:hover {
+  background: #aaa;
+  color: white;
+}
+
+body {
+background: #f4f4f4;
+color: #333;
+}
+
+
+nav a {
+padding: 20px;
+color: #333;
+text-decoration: none;
+}
+
+header {
+background: #ddd;
+position: sticky;
+top: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
