@@ -14,7 +14,7 @@ header, main, article {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 nav a {
@@ -41,7 +41,6 @@ nav a:hover {
 
 
 article {
-  height: 50vh;
   width:  100vh;
   background: orange;
 }
@@ -52,11 +51,12 @@ article:last-child {
   color: white;
 }
 
-.poema {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
 .autor {
   font-weight: bold;
   font-style: italic;
+}
+
+.paisagem{
+position: sticky;
+
 }
