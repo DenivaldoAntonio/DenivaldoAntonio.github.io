@@ -1,36 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
-}
-
-body {
-    background: #f4f4f4;
-    color: #333;
-}
-
-h1 {
-    font-size: 1.5em;
-}
-
-nav a {
-    padding: 20px;
-    color: #333;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background: #aaa;
-    color: white;
-}
-
-nav a:last-child {
-    background: #777;
-    color: white;
-}
-
-header, main, article {
+    padding: 0; 
+    margin: 0;
+  }
+  
+  
+  header, main, article {
     /* centrando o texto */
     display: flex;
     justify-content: center;
@@ -39,19 +14,26 @@ header, main, article {
   }
   
   header {
+    background: red;
     position: sticky;
     height: 10vh;
     top: 0;
   }
   
   main {
-    height: 90vh;
+      height: 90vh;
     background: purple;
   }
   
   article {
     height: 100vh;
     background: orange;
+  }
+  
+  article:last-child {
+    height: 100vh;
+    background: black;
+    color: white;
   }
   
   article:last-child {
