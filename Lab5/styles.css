@@ -13,6 +13,9 @@ header {
   color: white;
   text-align: center;
   padding: 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+
 }
 
 h1 {
@@ -22,6 +25,17 @@ h1 {
   color: white;
   text-align: center;
 }
+
+p a {
+  background-color: #D9EAD3; /* Verde claro inspirado pelos jardins de Singapura */
+  margin: 2px;
+  text-decoration: none;
+  color: #003366; /* Azul profundo para o contraste */
+  box-shadow: 1px 1px 1px lightgray;
+  border-radius: 2px;
+  padding: 5px;
+}
+
 
 nav a {
   background-color: #D9EAD3; /* Verde claro inspirado pelos jardins de Singapura */
@@ -34,6 +48,11 @@ nav a {
 }
 
 nav a:hover {
+  background-color: #FF6600; /* Laranja do pôr do sol tropical */
+  color: white;
+}
+
+p a:hover {
   background-color: #FF6600; /* Laranja do pôr do sol tropical */
   color: white;
 }
@@ -94,6 +113,7 @@ p {
   border-radius: 2px;
   max-width: 500px;
   max-height: 500px;
+  cursor:zoom-in ;
 }
 
 #Fotografias img:hover {
@@ -142,8 +162,8 @@ table, th, td {
   text-align: center;
 }
 
-ul li {
-  font-size: 2em;
+li {
+  font-size: 1em;
 }
 
 
