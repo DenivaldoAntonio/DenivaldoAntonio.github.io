@@ -57,26 +57,21 @@ article{
   color: aquamarine;
 }
 
-/* Estilização do artigo do poema */
 article#poema {
   width: 100vw;
   height: 50vh;
-  background: #add8e6; /* cor de fundo */
+  background: #add8e6;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-#paisagem {
-  background: #87ceeb;
-}
-
 #paisagem img {
-  width: 100vw; /* A imagem ocupará toda a largura do navegador */
-  height: auto; /* Altura proporcional */
+  width: 100vw; 
+  height: 50vh; 
 }
 
 #cidades {
-  background: #98fb98;
+  background-color: #98fb98;
 }
