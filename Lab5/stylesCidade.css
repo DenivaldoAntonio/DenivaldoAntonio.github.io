@@ -75,3 +75,33 @@ article#poema {
 #cidades {
   background-color: #98fb98;
 }
+
+#cidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Estilo do container que envolve as seções */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+
+/* Estilo para cada seção (card de cidade) */
+.container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+}
