@@ -142,6 +142,11 @@ table, th, td {
   text-align: center;
 }
 
+ul li {
+  font-size: 2em;
+}
+
+
 td {
   font-size: 14px;
   font-weight: bold;
