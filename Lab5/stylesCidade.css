@@ -84,24 +84,39 @@ article#poema {
   background-color: #f0f0f0;
 }
 
-/* Estilo do container que envolve as seções */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 1200px;
 }
 
-/* Estilo para cada seção (card de cidade) */
 .container section {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  padding: 10px;
-  margin: 15px;
+  padding: 5px;
+  margin: 10px;
   border-radius: 10px;
   transition: background-color 0.3s ease;
   width: 150px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+}
+
+.container section:hover {
+  background-color: #e0e0e0;
+}
+
+.container section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0; /* Cantos arredondados na parte superior */
+}
+
+.container section div {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
 }
