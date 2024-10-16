@@ -76,6 +76,7 @@ article#cidades {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   padding: 5vw;
   flex-direction: column;
   background-color: #f0f0f0;
@@ -83,7 +84,7 @@ article#cidades {
 }
 
 
-#cidades .container section {
+#cidades section {
   display: flex;
   align-items: center;
   background-color: #ffffff;
