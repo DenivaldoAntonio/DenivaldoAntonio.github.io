@@ -54,12 +54,12 @@ nav a:active {
 article{
   width: 100vw;
   height: 100vh;
-  color: aquamarine;
+  color: black;
 }
 
 article#poema {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
   background: #add8e6;
   display: flex;
   justify-content: center;
@@ -69,7 +69,18 @@ article#poema {
 
 #paisagem img {
   width: 100vw; 
-  height: 50vh; 
+  height: 100vh; 
+}
+
+.image-container{
+  position:relative ;
+
+}
+
+#paisagem p {
+  position: absolute;
+  top: 90%;
+  left: 80%;
 }
 
 article#cidades {
