@@ -72,22 +72,18 @@ article#poema {
   height: 50vh; 
 }
 
-#cidades {
-  background-color: #98fb98;
-}
-
 article#cidades {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5vw;
   flex-direction: row;
-
   background-color: #f0f0f0;
+  flex-wrap: wrap;
 }
 
 
-.container section {
+#cidades .container section {
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -99,16 +95,16 @@ article#cidades {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
 }
 
-.container section:hover {
+#cidades .container section:hover {
   background-color: #e0e0e0;
 }
 
-.container section img {
+#cidades .container section img {
   width: 100%;
   border-radius: 20px 0 0 20px; /* Cantos arredondados na parte superior */
 }
 
-.container section div {
+#cidades .container section div {
   margin-top: 10px;
   text-align: center;
   font-size: 16px;
