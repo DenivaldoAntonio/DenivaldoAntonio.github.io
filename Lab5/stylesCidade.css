@@ -51,6 +51,12 @@ nav a:active {
   color: white;
 }
 
+article{
+  width: 100vw;
+  height: 50vh;
+  color: aquamarine;
+}
+
 /* Estilização do artigo do poema */
 article#poema {
   width: 100vw;
@@ -64,6 +70,11 @@ article#poema {
 
 #paisagem {
   background: #87ceeb;
+}
+
+#paisagem img {
+  width: 100vw; /* A imagem ocupará toda a largura do navegador */
+  height: auto; /* Altura proporcional */
 }
 
 #cidades {
