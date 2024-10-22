@@ -28,6 +28,21 @@ h1 {
   text-align: center;
 }
 
+aside {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
 p a {
   background-color: #D9EAD3; /* Verde claro inspirado pelos jardins de Singapura */
   margin: 2px;
