@@ -1,0 +1,72 @@
+body{
+  margin: 10px
+}
+
+
+header {
+  background-color: silver; 
+  color: black;
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+
+body {
+    background-color: black; 
+  }
+
+  h1 {
+    margin: 5px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+  }
+
+
+  footer {
+    background-color: silver;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  main {
+    padding: 20px;
+    background-color: silver;
+    margin: 20px;
+    border-radius: 8px;
+  }
+
+
+  article #labs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    flex-direction: column;
+    background-color: silver;
+    flex-wrap: wrap;
+    
+    text-decoration: none
+  }
+
+  #labs section {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+  }
+  
+  #labs section:hover {
+    background-color: #e0e0e0;
+  }
