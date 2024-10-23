@@ -1,3 +1,7 @@
+div{
+  margin: 15;
+}
+
 body{
   margin: 10px
 }
@@ -35,7 +39,7 @@ body {
 
   main {
     padding: 20px;
-    background-color: silver;
+    
     margin: 20px;
     border-radius: 8px;
 
@@ -50,16 +54,40 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5vw;
+    background-color: silver;
     flex-direction: column;
     text-decoration: none;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
 
+  article#web {
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+    align-items: center;
+    padding: 5vw;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+
+  article#Intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: silver;
+    margin: 10px;
     flex-wrap: wrap;
   }
   
   
   #Labs section {
     text-decoration: none;
-
     display: flex;
     align-items: center;
     padding: 20px;
