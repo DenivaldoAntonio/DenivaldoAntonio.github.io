@@ -38,35 +38,39 @@ body {
     background-color: silver;
     margin: 20px;
     border-radius: 8px;
+
   }
 
+  main div{
+    margin: 20px;
+  }
 
-  article #labs {
+  article#Labs {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5vw;
     flex-direction: column;
-    background-color: silver;
-    flex-wrap: wrap;
-    
-    text-decoration: none
-  }
-
-  #labs section {
-    display: flex;
     text-decoration: none;
+
+    flex-wrap: wrap;
+  }
+  
+  
+  #Labs section {
+    text-decoration: none;
+
+    display: flex;
     align-items: center;
-    background-color: #ffffff;
-    padding: 5px;
+    padding: 20px;
     margin: 10px;
     flex-direction: column;
     border-radius: 10px;
     transition: background-color 0.3s ease;
     width: 150px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito visual */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito visual */
   }
   
-  #labs section:hover {
+  #Labs section:hover {
     background-color: #e0e0e0;
   }
