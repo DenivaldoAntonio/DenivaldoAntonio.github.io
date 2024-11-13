@@ -11,14 +11,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;
   }
 
   nav a {
-    padding: 12px;
     color: white;
     text-decoration: none;
-    border-radius: 15px;
   }
 
 h2 {
