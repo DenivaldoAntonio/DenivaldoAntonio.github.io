@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0; 
+  }
+
+  header {
+    background: blue;
+    position: sticky;
+    color: white;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+  }
+
+h2 {
+    justify-content: center;
+
+}
