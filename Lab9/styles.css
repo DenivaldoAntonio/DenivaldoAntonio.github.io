@@ -14,7 +14,14 @@ body {
     padding: 15px 15px;
   }
 
-h2 {
-    justify-content: center;
+  nav a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+  }
 
+h2 {
+    display: flex;
+    justify-content: center;
 }
