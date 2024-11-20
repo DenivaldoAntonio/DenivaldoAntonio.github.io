@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+
+  }
+
+  header {
+    background: purple;
+    position: sticky;
+    color: white;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+h2 {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
