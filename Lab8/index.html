@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <h3>1. Passa por aqui!</h3>
+    <p id="hoverText">Passe o mouse por cima deste texto.</p>
+
+    <h3>2. Pinta-me!</h3>
+    <p id="colorText">Pinta-me!</p>
+    <button data-color="red">Red</button>
+    <button data-color="green">Green</button>
+    <button data-color="blue">Blue</button>
+
+    <h3>3. Experimenta escrever...</h3>
+    <input type="text" id="textInput" placeholder="Escreva aqui...">
+
+    <h3>4. Escolha uma cor em inglês:</h3>
+    <input type="text" id="colorInput" placeholder="white">
+    <button id="submitColor">Submeter</button>
+
+    <h3>5. Conta!</h3>
+    <button id="countButton">Conta!</button>
+    <span id="countDisplay">0</span>
+
+    <script>
+        // Evento 1: Hover (Passa por aqui)
+        const hoverText = document.getElementById('hoverText');
+        hoverText.addEventListener('mouseover', () => {
+            hoverText.style.color = 'purple';
+        });
+        hoverText.addEventListener('mouseout', () => {
+            hoverText.style.color = 'black';
+        });
+
+        // Evento 2: Mudança de cor com botões
+        const colorText = document.getElementById('colorText');
+        document.querySelectorAll('button[data-color]').forEach(button => {
+            button.addEventListener('click', () => {
+                const color = button.getAttribute('data-color');
+                colorText.style.color = color;
+            });
+        });
+
+        // Evento 3: Digitação no campo de texto
+        const textInput = document.getElementById('textInput');
+        textInput.addEventListener('input', () => {
+            console.log('Texto digitado:', textInput.value);
+        });
+
+        // Evento 4: Submissão de cor
+        const colorInput = document.getElementById('colorInput');
+        const submitColor = document.getElementById('submitColor');
+        submitColor.addEventListener('click', () => {
+            const color = colorInput.value;
+            document.body.style.backgroundColor = color;
+        });
+
+        // Evento 5: Contador
+        const countButton = document.getElementById('countButton');
+        const countDisplay = document.getElementById('countDisplay');
+        let count = 0;
+        countButton.addEventListener('click', () => {
+            count++;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
