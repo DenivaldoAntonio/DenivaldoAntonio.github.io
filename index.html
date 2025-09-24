@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style3.css">
-
-    <title>Denivaldo Antonio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denivaldo Antonio</title>
+  <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
-    <header>
-        <h1>Primeira Página Web!</h1> 
-    </header>
+  <header>
+    <h1>Primeira Página Web!</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#disciplina">Disciplina</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h1>Desenvolva o Futuro</h1>
+        <p>Aprenda a criar interfaces criativas e interativas.</p>
+        <a href="#projetos" class="cta-button">Ver Projetos</a>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-container">
+        <div class="card">
+          <h3>Lab 1</h3>
     
-    <main>
-        <p>Eis a minha primeira página web!</p>
-        <p>
-            Na unidade curricular de 
-            <a href ="https://moodle.ensinolusofona.pt/course/view.php?id=11232">
-                Desenvolvimento de Interfaces Web 
-            </a>
-              abardaremos as seguintes tecnologias Web &#127760;:
-        </p>
+          <a href="./lab1/index.html" class="card-btn">Ver Projeto</a>
+        </div>
 
-        <ul>  
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React e Next.js</li>
-        </ul>
-        <p>Iremos criar soluções criativas!</p>
-        <img src="images/image.svg" alt="Desenvolvimento de Interfaces Web">
+        <div class="card">
+          <h3>Lab 2</h3>
+          <a href="./lab2/index.html" class="card-btn">Ver Projeto</a>
+        </div>
 
-            <h2>Laboratórios</h2>
+        <div class="card">
+          <h3>Lab 3</h3>
+          <a href="./lab3/index.html" class="card-btn">Ver Projeto</a>
+        </div>
+      </div>
+    </section>
 
-            <article id="Labs">
+    <section class="disciplina" id="disciplina">
+      <h2>Sobre a Disciplina</h2>
+      <div class="disciplina-container">
+        <div class="disciplina-text">
+          <p>
+            Desenvolvimento de Interfaces Web é uma disciplina focada em HTML5, CSS3,
+            design responsivo, JavaScript e frameworks modernas. O objetivo é ensinar
+            boas práticas de desenvolvimento e design centrado no utilizador.
+          </p>
+        </div>
 
-                <section>
-                    <a href="./lab1/index.html">Lab 1</a>
-                </section>
-                <section>
-                    <a href="lab2/index.html">Lab 2</a>
-                </section>
-                <section>
-                    <a href="lab3/index.html">Lab 3</a>
-                </section>
-            </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </main>
-
-    <footer>
-        <p>DENIVALDO ANTÓNIO DIW 2025</p>
-    </footer>
-
+  <footer>
+    <p>DENIVALDO ANTÓNIO DIW 2025</p>
+  </footer>
 </body>
 </html>
