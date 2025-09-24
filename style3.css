@@ -165,12 +165,16 @@ nav a:hover {
   flex: 1;
 }
 
+footer{
+text-align: center;}
 
-/* ====== RESPONSIVIDADE ====== */
+
 @media (max-width: 768px) {
   .disciplina-container {
     flex-direction: column; 
     text-align: center;
+
+    
   }
 
   nav ul {
