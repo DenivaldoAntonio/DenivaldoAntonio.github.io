@@ -21,17 +21,19 @@ nav {
 }
 
 nav a {
-    margin: 0 10px;
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ----- GRID PRINCIPAL ----- */
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr; /* duas colunas iguais */
