@@ -1,3 +1,140 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004466;
+    color: white;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ----- MENU INTERNO (links para secções) ----- */
+main p {
+    text-align: center;       /* centraliza os links */
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+main p a {
+    color: #003366;           /* cor dos links */
+    text-decoration: none;    /* remove o sublinhado */
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+main p a:hover {
+    color: #ff6600;           /* cor ao passar o rato */
+    text-decoration: underline;
+}
+
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #004466;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        margin: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* ----- ESTILO DAS SECTIONS ----- */
+section {
+    min-height: 100vh;              /* cada secção ocupa a altura do ecrã */
+    display: flex;                  /* permite centralizar conteúdo */
+    justify-content: center;        /* centraliza horizontalmente */
+    align-items: center;            /* centraliza verticalmente */
+    text-align: center;
+}
+
+/* Cores diferentes para cada secção */
+#Fotografias {
+    background-color: #f5f5f5;  /* cinza claro */
+}
+
+#video {
+    background-color: #dbeafe;  /* azul clarinho */
+}
+
+#poema {
+    background-color: #fef3c7;  /* amarelo pastel */
+}
+
+
+
 /* ----- ESTILO DAS IMAGENS NA PÁGINA MULTIMÉDIA ----- */
 #Fotografias {
   display: grid;

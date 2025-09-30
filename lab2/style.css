@@ -20,3 +20,20 @@
   transform: scale(1.05); /* Efeito de zoom suave */
   opacity: 0.8;
 }
+
+
+/* Página Localização */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main iframe {
+    width: 100%;        /* ocupa toda a largura disponível */
+    max-width: 800px;   /* limite máximo em ecrãs grandes */
+    height: 450px;      /* altura proporcional ao mapa */
+    border: 0;
+    border-radius: 8px; /* canto arredondado opcional */
+    margin-bottom: 20px;
+}
+

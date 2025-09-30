@@ -1,0 +1,115 @@
+/* ----- ESTILO BASE ----- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ----- GRID PRINCIPAL ----- */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* duas colunas iguais */
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "titulo titulo"
+        "tabela curiosidades";
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Área do título */
+ h2 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Área da tabela */
+table {
+    grid-area: tabela;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+
+table a {
+    color: #003366;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Área das curiosidades */
+ol {
+    grid-area: curiosidades;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-height: fit-content;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* ----- RESPONSIVIDADE ----- */
+@media (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr; /* uma coluna em tablets e telemóveis */
+        grid-template-areas:
+            "titulo"
+            "tabela"
+            "curiosidades";
+        gap: 20px;
+    }
+
+    table, ol {
+        width: 100%;
+    }
+}
