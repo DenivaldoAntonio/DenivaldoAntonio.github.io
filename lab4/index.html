@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Interativa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
     <header>
-        <h1>JavaScript</h1>
+        <h1>Laboratório 4</h1>
  
     </header>
 
     <main>
         <section>
-            <h2 id="titulo">Explora os eventos de rato</h2>
+            <h2 id="titulo"  onmouseover="destacarTitulo()" onmouseout="voltarTitulo()" >Explora os eventos de rato</h2>
 
-            <button onclick="count()">Clique</button>
+            <button onclick="countClick()">Click</button>
+            <button ondblclick="resetContador()">Reset Contador (Click 2x)</button>
+
             
-            <p id="paragrafo">Passa o rato sobre a imagem para ver efeitos.</p>
+            <p id="paragrafo" onmousemove="mudarTexto()" onmouseout="voltarTexto()"> Move o rato sobre este parágrafo.       
+            </p>
+            <p> Clique 1x na imagem</p>
                         
 
-            <img id="imagem" src="https://picsum.photos/400/250" alt="Imagem aleatória">
+            <img id="imagem" src="https://picsum.photos/400/250" alt="Imagem aleatória"
+                onclick="mudarImagem()"
+            >
         </section>
 
         <section>
