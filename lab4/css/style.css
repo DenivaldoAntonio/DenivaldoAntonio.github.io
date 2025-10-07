@@ -1,0 +1,44 @@
+/* Reset simples */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+
+nav button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background-color: #ddd;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    margin-top: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+#paragrafo {
+    margin-bottom: 10px;
+}
+
+#contador {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0077cc;
+}
