@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript pt2</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Laboratório 5</h1>
+    </header>
+
+    <main>
+
+        <section>
+
+            <p id="paragrafo" onmousemove="mudarTexto()" onmouseout="voltarTexto()">1.Passa por aqui!. </p>
+
+            <div id="pintaTexto">
+                <p>2.Pinta-me!</p>
+                <button class="btnCor" id="btnRed">Red</button>
+                <button class="btnCor" id="btnGreen">Green</button>
+                <button class="btnCor" id="btnBlue">Blue</button>
+            </div>
+
+            <div>
+                <p>3.Experimenta escrever...</p>
+                <input type="text" id="campoTexto">
+            </div>
+
+
+            <div>
+                <p>4. Escolha uma cor em inglês:</p>
+                <input type="text" id="corInput">
+                <button onclick="mudarCor(document.getElementById('corInput'))">Submeter</button>
+            </div>
+
+            <div>
+                <p>5.</p>
+                <button onclick="countClick()">Conta! </button>
+                <span id="contador">0</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
