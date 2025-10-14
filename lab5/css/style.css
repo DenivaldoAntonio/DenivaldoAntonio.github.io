@@ -1,0 +1,46 @@
+/* Mantém o texto e o select na mesma linha */
+div {
+    display: flex;
+    align-items: center; /* alinha verticalmente ao centro */
+    gap: 10px; /* espaço entre o texto e o select ou botões */
+    margin-bottom: 15px; /* espaçamento entre linhas de divs */
+}
+
+/* Remove a margem padrão dos parágrafos dentro dos divs */
+div p {
+    margin: 0;
+}
+
+/* Estilo dos botões */
+.btnCor {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Campo de texto */
+input[type="text"],
+input[type="number"],
+select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Contadores */
+#contador, #contador2 {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Cabeçalho */
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Para que tudo fique centralizado na tela */
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}

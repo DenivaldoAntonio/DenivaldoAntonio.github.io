@@ -1,4 +1,4 @@
-let counter = 0;
+
 
 function mudarTexto() {
   const p = document.getElementById("paragrafo");
@@ -36,10 +36,12 @@ campo.addEventListener("keydown", function () {
   indice = (indice + 1) % cores.length;
 });
 
-function mudarCor(inputElement) {
-  document.body.style.backgroundColor = inputElement.value;
+function mudarCor(selectElement) {
+  document.body.style.backgroundColor = selectElement.value;
 }
 
+
+  let counter = 0;
 
 function countClick() {
   counter++
@@ -47,10 +49,27 @@ function countClick() {
   soma.textContent = counter;
 }
 
+function enviarFormulario(event) {
+  event.preventDefault(); // Impede o recarregamento da página
+  
+  const nome = document.querySelector("#nome").value;
+  const idade = document.querySelector("#idade").value;
+  const mensagem = document.querySelector("#mensagem");
+
+  // Exibe a mensagem abaixo do formulário
+  mensagem.textContent = `Olá, o ${nome} tem ${idade} anos.`;
+
+  // Limpar os campos
+  document.querySelector("#nome").value = "";
+  document.querySelector("#idade").value = "";
+}
+
+  let counter2 = 0;
+
 
 function count() {
-  counter++
+  counter2++
   const soma = document.querySelector('#contador2')
-  soma.textContent = counter;
+  soma.textContent = counter2;
 }
 setInterval(count, 1000);
