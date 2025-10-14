@@ -46,3 +46,11 @@ function countClick() {
   const soma = document.querySelector('#contador')
   soma.textContent = counter;
 }
+
+
+function count() {
+  counter++
+  const soma = document.querySelector('#contador2')
+  soma.textContent = counter;
+}
+setInterval(count, 1000);
