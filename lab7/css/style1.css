@@ -6,6 +6,14 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body com background */
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* Header */
 header {
     display: flex;
@@ -19,13 +27,10 @@ header {
     z-index: 1000;
 }
 
-/* Título da loja */
 header h1 {
     font-size: 1.8rem;
     color: #333;
 }
-
-
 
 /* Navegação */
 header nav ul {
@@ -45,19 +50,23 @@ header nav ul li a:hover {
     color: #007BFF;
 }
 
-
-
-body {
-  background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
 /* Seções */
 section {
     padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Inputs e selects de filtros e pesquisa */
+#categoriaSelect,
+#ordenarSelect,
+#searchInput {
+    padding: 6px 10px;
+    margin: 5px 10px 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
 }
 
 /* Lista de produtos */
@@ -85,6 +94,10 @@ section {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+.produto button {
+    margin-top: auto; /* ⚡ faz o botão ir sempre para o final */
+}
+
 /* Imagem do produto */
 .produto img {
     max-width: 150px;
@@ -102,11 +115,12 @@ button {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+    background-color: #28a745;
+    color: #fff;
 }
 
 button:hover {
-    background-color: #007BFF;
-    color: white;
+    background-color: #218838;
 }
 
 /* Cesto */
@@ -123,6 +137,18 @@ button:hover {
     margin-top: 5px;
 }
 
+.botoes-cesto button {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.botoes-cesto button:hover {
+    background-color: #0056b3;
+}
+
 /* Total do cesto */
 #totalCesto {
     margin-top: 15px;
@@ -131,7 +157,7 @@ button:hover {
 }
 
 /* Responsivo */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -144,11 +170,18 @@ button:hover {
     }
 
     .produtos-lista {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
 
     .produto img {
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    #categoriaSelect,
+    #ordenarSelect,
+    #searchInput {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }

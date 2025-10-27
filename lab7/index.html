@@ -5,33 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style1.css">
-
     <title>Loja de Produtos</title>
 </head>
-<header>
-    <h1>Loja</h1>
-    <nav>
-        <ul>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#cesto">Cesto</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body>
+
+    <header>
+        <h1>Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cesto">Cesto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de produtos -->
     <section id="produtos">
         <h2>Selecione os seus Produtos</h2>
-        <section class="produtos-lista">
-        </section>
+
+        <!-- Filtro de categorias -->
+        <label for="categoriaSelect">Filtrar por categoria:</label>
+        <select id="categoriaSelect">
+            <option value="">Todas</option>
+        </select>
+
+
+        <label for="ordenarSelect">Ordenar por preço:</label>
+        <select id="ordenarSelect">
+            <option value="">Padrão</option>
+            <option value="asc">Preço crescente</option>
+            <option value="desc">Preço decrescente</option>
+        </select>
+
+        <label for="searchInput">Pesquisar produto:</label>
+        <input type="text" id="searchInput" placeholder="Digite o nome do produto">
+
+
+        <!-- Lista de produtos -->
+        <section class="produtos-lista"></section>
     </section>
 
+    <!-- Seção do cesto -->
     <section id="cesto">
         <h2>Cesto</h2>
-        <section class="cesto-lista">
-        </section>
+        <section class="cesto-lista"></section>
         <p id="totalCesto">Total: €0.00</p>
     </section>
 
+    <!-- Scripts -->
     <script src="scripts/produtos.js"></script>
     <script src="scripts/main.js"></script>
 
