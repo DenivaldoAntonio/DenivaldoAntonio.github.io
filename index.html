@@ -1,47 +1,111 @@
+```html
 <!doctype html>
 <html lang="pt">
   <head>
     <meta charset="utf-8" />
-    <title>Primeira Página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Desenvolvimento de Interfaces Web</title>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <header>
-      <h1>Primeira Página Web!</h1>
-    </header>
-
-    <main>
-      <p>Eis a minha primeira página Web!</p>
-
-      <p>
-        Na Unidade Curricular de
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=27320">
-          Desenvolvimento de Interfaces Web
-        </a>
-        abordaremos as seguintes tecnologias Web &#127760;:
-      </p>
-
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-      </ul>
-
-      <p>Iremos criar soluções criativas!</p>
-
+    <section id="inicio" class="hero">
       <nav>
         <ul>
-          <li><a href="cidade/index.html">Lab 1</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#disciplina">Interfaces Web</a></li>
         </ul>
       </nav>
 
-      <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" />
-    </main>
+      <div class="hero-content">
+        <p class="subtitle">DESENVOLVIMENTO DE INTERFACES WEB</p>
 
-    <footer>
-      <p>Universidade Lusófona © 2026</p>
-    </footer>
+        <h1>Transformar ideias<br />em experiências digitais.</h1>
+
+        <p>
+          Um espaço dedicado aos projetos e aprendizagens desenvolvidos ao longo
+          da disciplina.
+        </p>
+
+        <a href="#projetos" class="cta"> Ver projetos </a>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects">
+      <div class="section-title">
+        <p>O meu trabalho</p>
+        <h2>Projetos</h2>
+      </div>
+
+      <div class="project-container">
+        <article class="project-card">
+          <div class="project-number">01</div>
+
+          <h3>Lab 2</h3>
+
+          <p>
+            Exercício desenvolvido no âmbito da disciplina de Desenvolvimento de
+            Interfaces Web, explorando a estrutura e organização de uma página
+            Web.
+          </p>
+
+          <a href="Lab2/index.html"> Ver projeto → </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+
+          <h3>Lab 3</h3>
+
+          <p>
+            Projeto desenvolvido para aprofundar os conhecimentos de HTML e CSS,
+            explorando diferentes técnicas de organização e apresentação de
+            conteúdo.
+          </p>
+
+          <a href="Lab3/index.html"> Ver projeto → </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="disciplina" class="discipline">
+      <div class="discipline-content">
+        <div class="discipline-text">
+          <p class="section-label">A disciplina</p>
+
+          <h2>Desenvolvimento de<br />Interfaces Web</h2>
+
+          <p>
+            Na Unidade Curricular de
+            <a
+              href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
+              target="_blank"
+            >
+              Desenvolvimento de Interfaces Web
+            </a>
+            abordaremos diferentes tecnologias Web.
+          </p>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React e Next.js</li>
+          </ul>
+
+          <p>
+            Ao longo da disciplina iremos criar soluções criativas, explorando
+            os princípios de desenvolvimento e design de interfaces Web.
+          </p>
+        </div>
+
+        <div class="discipline-image">
+          <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
