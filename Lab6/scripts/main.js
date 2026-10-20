@@ -1,80 +1,83 @@
-// A. Declaração de variáveis
 
-const input = document.querySelector('form input[type="number"]');
-const lista = document.querySelector("#lista");
-const repetidos = document.querySelector("#listaRepetidos");
-const total = document.querySelector("#total");
-const totalRepetidos = document.querySelector("#totalRepetidos");
-const form = document.querySelector("form");
+const nodeInputNumero = document.querySelector('form input[type="number"]');
+const nodeInputSubmit = document.querySelector('form input[type="submit"]');
+const nodeUlColecao = document.querySelector("#colecao ul");
+const nodeUlRepetidos = document.querySelector("#repetidos ul");
 
-let colecao = JSON.parse(localStorage.getItem("colecao")) || [];
-let cromosRepetidos = JSON.parse(localStorage.getItem("repetidos")) || [];
+const nodeTotalCromos = document.querySelector("#colecao h3 span");
+const nodeTotalRepetidos = document.querySelector("#repetidos h3 span");
+
+const nodeForm = document.querySelector("form");
+
+const colecao = JSON.parse(localStorage.getItem("colecao")) || [];
+const repetidos = JSON.parse(localStorage.getItem("repetidos")) || [];
 
 
-
-function guardar() {
+function guardaDados() {
     localStorage.setItem("colecao", JSON.stringify(colecao));
-    localStorage.setItem("repetidos", JSON.stringify(cromosRepetidos));
+    localStorage.setItem("repetidos", JSON.stringify(repetidos));
 }
 
 
-
-function atualizar() {
-    lista.innerHTML = "";
-    repetidos.innerHTML = "";
-
-    colecao.forEach(function(numero) {
-        const li = document.createElement("li");
-        li.textContent = numero;
-        lista.appendChild(li);
-    });
-
-    cromosRepetidos.forEach(function(numero, indice) {
-        const li = document.createElement("li");
-        const botao = document.createElement("button");
-
-        li.textContent = numero + " ";
-
-        botao.textContent = "Eliminar";
-        botao.type = "button";
-
-        botao.addEventListener("click", function() {
-            cromosRepetidos.splice(indice, 1);
-            guardar();
-            atualizar();
-        });
-
-        li.appendChild(botao);
-        repetidos.appendChild(li);
-    });
-
-    total.textContent = colecao.length;
-    totalRepetidos.textContent = cromosRepetidos.length;
-}
-
-
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const numero = Number(input.value);
+function guardaCarta() {
+    const numero = Number(nodeInputNumero.value);
 
     if (colecao.includes(numero)) {
-        cromosRepetidos.push(numero);
-        cromosRepetidos.sort(function(a, b) {
-            return a - b;
-        });
+        repetidos.push(numero);
+        repetidos.sort((a, b) => a - b);
     } else {
         colecao.push(numero);
-        colecao.sort(function(a, b) {
-            return a - b;
-        });
+        colecao.sort((a, b) => a - b);
     }
 
-    guardar();
-    atualizar();
+    guardaDados();
 
-    input.value = "";
-});
+    atualizaLista(colecao, nodeUlColecao);
+    atualizaLista(repetidos, nodeUlRepetidos);
+
+    nodeTotalCromos.textContent = colecao.length;
+    nodeTotalRepetidos.textContent = repetidos.length;
+
+    nodeInputNumero.value = "";
+}
 
 
-atualizar();
+function atualizaLista(lista, nodeLista) {
+    nodeLista.innerHTML = "";
+
+    lista.forEach(function(numero, indice) {
+        const nodeItem = document.createElement("li");
+
+        if (lista === repetidos) {
+            nodeItem.innerHTML = `${numero} <button type="button" data-indice="${indice}">Eliminar</button>`;
+        } else {
+            nodeItem.textContent = numero;
+        }
+
+        nodeLista.appendChild(nodeItem);
+    });
+
+    nodeLista.querySelectorAll("button").forEach(function(nodeBotao) {
+        nodeBotao.addEventListener("click", function() {
+            repetidos.splice(Number(nodeBotao.dataset.indice), 1);
+
+            guardaDados();
+
+            atualizaLista(repetidos, nodeUlRepetidos);
+            nodeTotalRepetidos.textContent = repetidos.length;
+        });
+    });
+}
+
+
+nodeForm.onsubmit = (event) => {
+    event.preventDefault();
+    guardaCarta();
+};
+
+
+atualizaLista(colecao, nodeUlColecao);
+atualizaLista(repetidos, nodeUlRepetidos);
+
+nodeTotalCromos.textContent = colecao.length;
+nodeTotalRepetidos.textContent = repetidos.length;
