@@ -1,0 +1,16 @@
+
+body {
+    background-color: #e9e7fa;
+    font-family: "Times New Roman", serif;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 150px;
+}
+
+button, input {
+    font-size: 30px;
+}
