@@ -1,7 +1,7 @@
 
 const nodeInputNumero = document.querySelector('form input[type="number"]');
 const nodeInputSubmit = document.querySelector('form input[type="submit"]');
-const nodeUlColecao = document.querySelector("#colecao ul");
+const nodeUlColecao = document.querySelector("#lista");
 const nodeUlRepetidos = document.querySelector("#repetidos ul");
 
 const nodeTotalCromos = document.querySelector("#colecao h3 span");
