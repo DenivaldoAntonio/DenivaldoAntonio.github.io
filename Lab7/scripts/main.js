@@ -1,5 +1,4 @@
 
-
 const produtosLista = document.querySelector('.produtos-lista');
 const selectCategoria = document.getElementById('categoriaSelect');
 const ordenarSelect = document.getElementById('ordenarSelect');
@@ -233,7 +232,6 @@ function renderizarProdutos(listaProdutos) {
     });
 }
 
-// Atualizar as categorias disponíveis
 function atualizarCategorias() {
     const categoriaAtual = selectCategoria.value;
 
